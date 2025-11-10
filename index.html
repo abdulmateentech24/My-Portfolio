@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Abdul Mateen" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Abdul Mateen">Abdul Mateen</h1>
+
+          <p class="title">Full Stack Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:abdulmateen.tech24@gmail.com" class="contact-link">abdulmateen.tech24@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+91 9505248624" class="contact-link">+91 9505248624</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">24 February</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Near Farooq Nagar Backside of Falaknuma Palace Hyderabad,India 500053.</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/abdulmateen.tech24/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://x.com/Mateenabdul2402" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.facebook.com/profile.php?id=61574172478325" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+  <a href="https://app.slack.com/client/T026LP51T0F/C0271LZU8UB" class="social-link" target="_blank">
+    <ion-icon name="logo-slack"></ion-icon>
+  </a>
+</li>
+
+
+<li class="social-item">
+  <a href="https://github.com/abdulmateentech24" class="social-link" target="_blank">
+    <ion-icon name="logo-github"></ion-icon>
+  </a>
+</li>
+
+<li class="social-item">
+  <a href="https://www.youtube.com/@AbdulMateen.tech24" class="social-link" target="_blank">
+    <ion-icon name="logo-youtube"></ion-icon>
+  </a>
+</li>
+
+<li class="social-item">
+  <a href="https://www.linkedin.com/in/abdulmateen-tech24//" class="social-link" target="_blank">
+    <ion-icon name="logo-linkedin"></ion-icon>
+  </a>
+</li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Certificates</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I’m a Creative Junior Software Developer from India, specializing in Html,Css,Javascript using Front-End Web Development and also Back-end Web development using Python Programming. I enjoy transforming complex problems into simple, elegant code and crafting innovative, visually appealing web designs.
+          </p>
+
+          <p>
+            My role is to build websites that are not only functional and user-friendly but also attractive and engaging. I add a personal touch to every project, ensuring the software is both eye-catching and easy to use.
+          </p>
+
+          <p>
+                My goal is to deliver your message and identity in the most creative and impactful way. I’ve designed and developed web solutions for several well-known brands, helping them stand out with unique digital experiences..
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps Like APK</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications like Apk Using Buildozer Commands for Android.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Photography</h4>
+
+                <p class="service-item-text">
+                  I make high-quality photos of any category at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Shaik Taha</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    “Abdul consistently demonstrated creativity and strong technical understanding throughout his BCA program. His portfolio showcases a blend of innovation and professionalism that’s rare for someone at his level.”
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Ms Maria </h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    “Abdul’s frontend development skills are exceptional. He has a great sense of design and usability. His ability to merge functionality with aesthetics made our web app intuitive and engaging.”
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>S Parijatha</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    “Abdul is a talented developer who combines strong technical skills with a genuine passion for problem-solving. He wrote efficient, well-documented Python code and was proactive in suggesting improvements. A true team player!”.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Mohammed Sami</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    “Working with Abdul was an absolute pleasure! He delivered a clean, responsive website that perfectly matched our brand. His attention to detail and creative touch made the final product stand out. Highly recommend him for any web development project!”.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Client</h4>
+
+              <div data-modal-text>
+                <p>
+                  “The website Abdul built for me is elegant, fast, and user-friendly. He transformed my ideas into a stunning design that exceeded expectations. Communication was smooth, and he delivered everything on time.”.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clients & Companies</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/united health care.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/fhpl.png" alt="client logo">
+              </a>
+            </li>
+
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/3i-infotech.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/optum logo.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/Artech Infosystem Private Limited.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/cbsl.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Degree From Pioneer Degree College affilated with Osmania University Hyderabad</h4>
+
+              <span>2021 — 2024</span>
+
+              <p class="timeline-text">
+                As a Bachelor of Computer Applications (BCA) graduate from Pioneer College, affiliated with Osmania University (Batch 2021–2024). Skilled in Computer Programming, Web Development, Database management, and Software development concepts. Possesses a solid academic foundation along with practical exposure to Projects and problem-solving. Eager to apply technical expertise, analytical thinking, and creativity in contributing to innovative software solutions and organizational growth.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Intermediate From Ms junior College affilated With TSBIE</h4>
+
+              <span>2019 — 2021</span>
+
+              <p class="timeline-text">
+               Completed Intermediate education in 2021 from MS Junior College, affiliated with the Telangana State Board of Intermediate Education. Developed a strong academic foundation with focus on core subjects, knowledge, problem-solving, and analytical skills. Eager to pursue higher education and build a successful career by applying knowledge, dedication, and continuous learning.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">High Schooling From Unique High School</h4>
+
+              <span>2017 — 2018</span>
+
+              <p class="timeline-text">
+                High Schooling from Unique High School, affiliated with the Telangana State Board. Gained a strong academic foundation along with discipline, teamwork With Friends and problem-solving skills. Dedicated to continuous learning and committed to building a solid path for future academic and career growth..
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Chat Support Executive in Optum Global Solution</h4>
+
+              <span>2025 — Present</span>
+
+              <p class="timeline-text">
+                A Chat Support Executive at United Health Care is responsible for efficiently resolving customer inquiries related to
+ healthcare plans, claims, billing, and coverage through chat and other communication channels. We handle issues
+ promptly, often with the aim of first-contact resolution, provide accurate information, assist in claims processing, and
+ escalate complex cases when needed, providing excellent customer service to support healthcare operations.
+              </p>
+              <p>&nbsp;</p>
+
+              <p class="timeline-text">The Digital Support Specialist (Chat) is responsible for providing real-time, accurate, and empathetic assistance to
+ United Health Care members through a chat-based platform. This role is a primary point of contact for members seeking
+ help with digital services, including account creation, login issues, and profile management. The specialist ensures a
+ seamless and positive digital experience by resolving issues efficiently and escalating complex inquiries as needed.</p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Executive-BPS in 3i-Infotech Business Process Solutions</h4>
+
+              <span>2023 — 2024</span>
+
+              <p class="timeline-text">
+                As a Customer Service Executive – Non-Voice (Insurance Process) at FHPL, I focus on providing accurate, timely, and professional support to policyholders, insurance companies, and internal stakeholders through email, chat, and backend processing. I ensure smooth claim processing, efficient policy servicing, and prompt query resolution, while consistently adhering to FHPL’s service quality standards.
+              </p>
+
+              <p>&nbsp;</p>
+
+              <p class="timeline-text">
+               As a Digital Support Specialist at 3i-Infotech, I’m excited to be the first point of contact for our insurance clients.
+ Our top priority is to deliver quick, precise, and compassionate assistance through digital platforms. I will be
+ tackling a variety of customer inquiries, such as questions about policies, claims, and account adjustments, all
+ while maintaining the company standards and ensuring that everything runs smoothly.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Software Development</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Data Analytics</h5>
+                <data value="90">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">React</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Student Registeration System.png" alt="Student Registration System" loading="lazy">
+</figure>
+
+
+
+                <h3 class="project-title">Student Registeration System</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Billing Software.png" alt="Billing Software" loading="lazy">
+</figure>
+
+
+                <h3 class="project-title">Billing Software</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Login Page.png" alt="Login Page" loading="lazy">
+</figure>
+
+                <h3 class="project-title">Login Page</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                 <img src="./assets/images/file transferring apk.png" alt="File Transferring APK" loading="lazy">
+</figure>
+
+
+
+                <h3 class="project-title">File Transferring Apk</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Educational Website.png" alt="Educational Website" loading="lazy">
+</figure>
+
+                <h3 class="project-title">Educational Website.</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Institution Digital Skill Upgradition Website.png" alt="Institution Digital Skill Upgradition Website" loading="lazy">
+</figure>
+
+
+                <h3 class="project-title">Institution Digital Skill Upgradition Website</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Inventory Management System.png" alt="Inventory Management System" loading="lazy">
+</figure>
+
+
+                <h3 class="project-title">Inventory Management System</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Weather App.png" alt="Weather App" loading="lazy">
+</figure>
+
+
+
+                <h3 class="project-title">Weather App</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Uber Pickups Analysis.png" alt="Uber Pickups Analysis" loading="lazy">
+</figure>
+
+
+                <h3 class="project-title">Uber Pickup Analysis Using AI&ML</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CERTIFICATES
+      -->
+
+      <article class="certificates" data-page="certificates">
+
+        <header>
+          <h2 class="h2 article-title">Certificates</h2>
+        </header>
+
+        <section class="certificate-posts">
+
+          <ul class="certificate-posts-list">
+
+            <li class="certificate-post-item">
+              <a href="#">
+
+                <figure class="certificate-banner-box">
+                  <img src="./assets/images/Certificate-1.jpg" alt="Bachelors Degree in 2024" loading="lazy">
+                </figure>
+
+                <div class="certificate-content">
+
+                  <div class="certificate-meta">
+                    <p class="certificate-category">Graduation in 2024</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Jul 22, 2024</time>
+                  </div>
+
+                  <h3 class="h3 certificate-item-title">Original Degree</h3>
+
+                  <p class="certificate-text">
+                    Successfully completed a Bachelor of Computer Applications (BCA) from Osmania University in the year of 2024, specializing in computer science and application development.
+The program spanned from October 2022 to July 2024, providing strong technical and analytical skills in software and IT.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="certificate-post-item">
+              <a href="#">
+
+                <figure class="certificate-banner-box">
+                  <img src="./assets/images/Certificate-2.jpg" alt="Diploma in Python & Advance Python" loading="lazy">
+                </figure>
+
+                <div class="certificate-content">
+
+                  <div class="certificate-meta">
+                    <p class="certificate-category">Diploma</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Mar 17, 2025</time>
+                  </div>
+
+                  <h3 class="h3 certificate-item-title">Diploma in Python & Advance Python</h3>
+
+                  <p class="certificate-text">
+                    Completed a Diploma in Python & Advanced Python from March 17, 2025 to May 2, 2025, gaining Expertise in Core and Advanced Python Programming Concepts.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="certificate-post-item">
+              <a href="#">
+
+                <figure class="certificate-banner-box">
+                  <img src="./assets/images/Certificate-3.jpg" alt="Certificate in C and C++ Programming" loading="lazy">
+                </figure>
+
+                <div class="certificate-content">
+
+                  <div class="certificate-meta">
+                    <p class="certificate-category">Certification</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Nov 5, 2024</time>
+                  </div>
+
+                  <h3 class="h3 certificate-item-title">Certificate in C and C++ Programming</h3>
+
+                  <p class="certificate-text">
+                    I have obtained an ISO and IAF certified C and C++ programming certificate, which validates my proficiency in both foundational concepts of C and C++. The certification covers core programming principles, data structures, object-oriented programming, and practical coding projects. Being ISO and IAF certified, it ensures that my skills meet internationally recognized quality standards, demonstrating my ability to develop efficient, reliable, and scalable software solutions.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="certificate-post-item">
+              <a href="#">
+
+                <figure class="certificate-banner-box">
+                  <img src="./assets/images/Certificate-4.jpg" alt="Certificate in Java and Oracle Programming" loading="lazy">
+                </figure>
+
+                <div class="certificate-content">
+
+                  <div class="certificate-meta">
+                    <p class="certificate-category">Certification</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Dec 21, 2024</time>
+                  </div>
+
+                  <h3 class="h3 certificate-item-title">Certificate in Java and Oracle Programming</h3>
+
+                  <p class="certificate-text">
+                    I have obtained an ISO and IAF Certified Java and Oracle Programming certificate, which validates my expertise in both Java application development and Oracle database management. The certification encompasses core Java concepts, object-oriented programming, exception handling, multithreading, GUI development, as well as SQL, PL/SQL, and database design in Oracle. Being ISO and IAF certified, it ensures that my skills adhere to internationally recognized quality standards, demonstrating my ability to develop efficient, scalable, and database-driven software solutions.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="certificate-post-item">
+              <a href="#">
+
+                <figure class="certificate-banner-box">
+                  <img src="./assets/images/Certificate-5.jpg" alt="Essentials of Python Programmming" loading="lazy">
+                </figure>
+
+                <div class="certificate-content">
+
+                  <div class="certificate-meta">
+                    <p class="certificate-category">Certification</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">2024 to 2025</time>
+                  </div>
+
+                  <h3 class="h3 certificate-item-title">This Certificate is Cosist of Essentials of Python Programmming</h3>
+
+                  <p class="certificate-text">
+                    I have successfully completed the Essentials of Python Programming certificate, which provided a solid foundation in Python programming. This certification covers core Python concepts, including data types, control structures, functions, modules, file handling, and basic object-oriented programming. Through hands-on exercises and practical projects, I developed problem-solving and coding skills, enabling me to write efficient, readable, and maintainable Python programs.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="certificate-post-item">
+              <a href="#">
+
+                <figure class="certificate-banner-box">
+                  <img src="./assets/images/Certificate-6.jpg" alt="Ms-Excel" loading="lazy">
+                </figure>
+
+                <div class="certificate-content">
+
+                  <div class="certificate-meta">
+                    <p class="certificate-category">Certification</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">june 15, 2024</time>
+                  </div>
+
+                  <h3 class="h3 certificate-item-title">Ms-Excel</h3>
+
+                  <p class="certificate-text">
+                    Abdul Mateen has successfully completed the Excel course
+offered by MagicBus India Foundation on June 15, 2024,
+demonstrating proficiency in spreadsheet management, data analysis, and essential Excel functions for practical applications.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.2341997484383!2d78.46784257439806!3d17.32370858350807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb98fd3f9f9f4b%3A0xbfb9d2db1b257ca!2sTaj%20Falaknuma%20Palace!5e0!3m2!1sen!2sin!4v1730055012345!5m2!1sen!2sin"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
