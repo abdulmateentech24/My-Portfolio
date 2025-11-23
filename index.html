@@ -1171,43 +1171,37 @@ demonstrating proficiency in spreadsheet management, data analysis, and essentia
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="https://api.web3forms.com/submit" method="POST" class="form" data-form>
+          <form action="#" class="form" data-form>
 
-  <input type="hidden" name="access_key" value="YOUR_NEW_ACCESS_KEY">
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
 
-  <input type="hidden" name="redirect" value="https://web3forms.com/success">
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
 
-  <div class="input-wrapper">
-      <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-      <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-  </div>
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
 
-  <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
 
-  <button class="form-btn" type="submit" data-form-btn disabled>
-      <ion-icon name="paper-plane"></ion-icon>
-      <span>Send Message</span>
-  </button>
+          </form>
 
-</form>
+        </section>
 
-<script>
-  const form = document.querySelector("[data-form]");
-  const inputs = document.querySelectorAll("[data-form-input]");
-  const button = document.querySelector("[data-form-btn]");
+      </article>
 
-  inputs.forEach(input => {
-    input.addEventListener("input", () => {
-      if (form.checkValidity()) {
-        button.removeAttribute("disabled");
-      } else {
-        button.setAttribute("disabled", true);
-      }
-    });
-  });
-</script>
+    </div>
 
-          <!--
+  </main>
+
+
+
+
+
+
+  <!--
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
