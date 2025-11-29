@@ -1,3 +1,6 @@
+let username = prompt("Hi,can I have your name please?");
+alert("Welcome,  I' happy to have you as a visitor,"+username);
+
 'use strict';
 
 
