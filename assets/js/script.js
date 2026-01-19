@@ -158,3 +158,130 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+class PointerParticle {
+  constructor(spread, speed, component) {
+    const { ctx, pointer, hue, scrollVelocity } = component;
+
+    this.ctx = ctx;
+    this.x = pointer.x;
+    this.y = pointer.y;
+    this.mx = pointer.mx * 0.1;
+    this.my = pointer.my * 0.1 - scrollVelocity * 0.3;
+    this.size = Math.random() + 1;
+    this.decay = 0.015;
+    this.speed = speed * 0.08;
+    this.spread = spread * this.speed;
+
+    this.spreadX = (Math.random() - 0.5) * this.spread - this.mx;
+    this.spreadY = (Math.random() - 0.5) * this.spread - this.my;
+
+    this.color = `hsla(${hue}, 90%, 60%, 1)`;
+  }
+
+  update() {
+    this.ctx.fillStyle = this.color;
+    this.ctx.beginPath();
+    this.ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+    this.ctx.fill();
+
+    this.x += this.spreadX * this.size;
+    this.y += this.spreadY * this.size;
+    this.size -= this.decay;
+  }
+}
+
+class PointerParticles extends HTMLElement {
+  static register() {
+    customElements.define("pointer-particles", this);
+  }
+
+  constructor() {
+    super();
+    this.canvas = document.createElement("canvas");
+    this.ctx = this.canvas.getContext("2d");
+
+    this.particles = [];
+    this.pointer = { x: 0, y: 0, mx: 0, my: 0 };
+    this.hue = 0;
+
+    this.lastScrollY = window.scrollY;
+    this.scrollVelocity = 0;
+  }
+
+  connectedCallback() {
+    this.attachShadow({ mode: "open" });
+    this.shadowRoot.append(this.canvas);
+
+    Object.assign(this.canvas.style, {
+      position: "fixed",
+      inset: 0,
+      pointerEvents: "none",
+      zIndex: 9999
+    });
+
+    this.resize();
+
+    window.addEventListener("resize", () => this.resize());
+    window.addEventListener("mousemove", e => this.onMove(e));
+    window.addEventListener("click", e => this.onClick(e));
+    window.addEventListener("scroll", () => this.onScroll());
+
+    this.animate();
+  }
+
+  resize() {
+    this.canvas.width = window.innerWidth;
+    this.canvas.height = window.innerHeight;
+  }
+
+  onMove(event) {
+    this.pointer.x = event.clientX;
+    this.pointer.y = event.clientY;
+    this.pointer.mx = event.movementX;
+    this.pointer.my = event.movementY;
+
+    for (let i = 0; i < 10; i++) {
+      this.particles.push(new PointerParticle(1, 1, this));
+    }
+  }
+
+  onClick(event) {
+    this.pointer.x = event.clientX;
+    this.pointer.y = event.clientY;
+
+    for (let i = 0; i < 220; i++) {
+      this.particles.push(
+        new PointerParticle(60, Math.random() + 1, this)
+      );
+    }
+  }
+
+  onScroll() {
+    const currentY = window.scrollY;
+    this.scrollVelocity = currentY - this.lastScrollY;
+    this.lastScrollY = currentY;
+  }
+
+  animate() {
+    requestAnimationFrame(() => this.animate());
+    this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+
+    this.hue = (this.hue + 3) % 360;
+
+    // Smooth scroll decay
+    this.scrollVelocity *= 0.9;
+
+    for (let i = this.particles.length - 1; i >= 0; i--) {
+      const p = this.particles[i];
+      p.update();
+
+      if (p.size <= 0.1) {
+        this.particles.splice(i, 1);
+      }
+    }
+  }
+}
+
+PointerParticles.register();
+
