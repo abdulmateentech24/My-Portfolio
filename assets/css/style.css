@@ -1880,3 +1880,20 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  cursor: none;     /* hide default cursor */
+  overflow-x: hidden;
+  /* DO NOT set background
+     abdulmateen.org background stays */
+}
